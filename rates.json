@@ -1,13 +1,37 @@
 {
-  "updated": "2026-07-25T13:21:58+00:00",
+  "updated": "2026-07-25T09:00:00+00:00",
   "data": "2026-07-24",
-  "bnr_eur": 5.2348,
-  "unicredit": {
-    "cumparare": 5.16,
-    "vanzare": 5.3
-  },
-  "bcr": {
-    "cumparare": 5.148,
-    "vanzare": 5.319
+  "currencies": ["EUR", "USD", "GBP", "CHF"],
+  "bnr": { "EUR": 5.2348, "USD": 4.5974, "GBP": 6.1215, "CHF": 5.6297 },
+  "banks": {
+    "Banca Transilvania": { "EUR": { "cumparare": 5.15, "vanzare": 5.315 } },
+    "CEC Bank": { "EUR": { "cumparare": 5.17, "vanzare": 5.29 } },
+    "UniCredit Bank": { "EUR": { "cumparare": 5.12, "vanzare": 5.34 } },
+    "BRD": { "EUR": { "cumparare": 5.155, "vanzare": 5.317 } },
+    "BCR": { "EUR": { "cumparare": 5.148, "vanzare": 5.319 } },
+    "ING Bank": { "EUR": { "cumparare": 5.1284, "vanzare": 5.3378 } },
+    "Raiffeisen Bank": { "EUR": { "cumparare": 5.1583, "vanzare": 5.309 } },
+    "EximBank": { "EUR": { "cumparare": 5.183, "vanzare": 5.283 } },
+    "Libra Bank": { "EUR": { "cumparare": 5.175, "vanzare": 5.305 } },
+    "Intesa Sanpaolo Bank": { "EUR": { "cumparare": 5.1521, "vanzare": 5.272 } },
+    "Patria Bank": { "EUR": { "cumparare": 5.1352, "vanzare": 5.3416 } }
+  }
+}{
+  "updated": "2026-07-25T09:00:00+00:00",
+  "data": "2026-07-24",
+  "currencies": ["EUR", "USD", "GBP", "CHF"],
+  "bnr": { "EUR": 5.2348, "USD": 4.5974, "GBP": 6.1215, "CHF": 5.6297 },
+  "banks": {
+    "Banca Transilvania": { "EUR": { "cumparare": 5.15, "vanzare": 5.315 } },
+    "CEC Bank": { "EUR": { "cumparare": 5.17, "vanzare": 5.29 } },
+    "UniCredit Bank": { "EUR": { "cumparare": 5.12, "vanzare": 5.34 } },
+    "BRD": { "EUR": { "cumparare": 5.155, "vanzare": 5.317 } },
+    "BCR": { "EUR": { "cumparare": 5.148, "vanzare": 5.319 } },
+    "ING Bank": { "EUR": { "cumparare": 5.1284, "vanzare": 5.3378 } },
+    "Raiffeisen Bank": { "EUR": { "cumparare": 5.1583, "vanzare": 5.309 } },
+    "EximBank": { "EUR": { "cumparare": 5.183, "vanzare": 5.283 } },
+    "Libra Bank": { "EUR": { "cumparare": 5.175, "vanzare": 5.305 } },
+    "Intesa Sanpaolo Bank": { "EUR": { "cumparare": 5.1521, "vanzare": 5.272 } },
+    "Patria Bank": { "EUR": { "cumparare": 5.1352, "vanzare": 5.3416 } }
   }
 }
