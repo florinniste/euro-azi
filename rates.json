@@ -1,5 +1,13 @@
 {
-  "updated": "2026-07-24T13:10:00+00:00",
+  "updated": "2026-07-25T13:21:58+00:00",
   "data": "2026-07-24",
-  "bnr_eur": 5.2348
+  "bnr_eur": 5.2348,
+  "unicredit": {
+    "cumparare": 5.16,
+    "vanzare": 5.3
+  },
+  "bcr": {
+    "cumparare": 5.148,
+    "vanzare": 5.319
+  }
 }
