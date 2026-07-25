@@ -76,17 +76,39 @@ function tabs(){var h="";for(var i=0;i<CUR.length;i++){var c=CUR[i];h+='<div cla
   var t=document.querySelectorAll('.tab');for(var j=0;j<t.length;j++)t[j].onclick=function(){cur=this.dataset.c;savePrefs();render()}}
 function seg(){var h='<button data-x="buy" class="'+(dir=="buy"?"on":"")+'">Cumpăr '+cur+'</button><button data-x="sell" class="'+(dir=="sell"?"on":"")+'">Vând '+cur+'</button>';
   document.getElementById("seg").innerHTML=h;var b=document.querySelectorAll('.seg button');for(var i=0;i<b.length;i++)b[i].onclick=function(){dir=this.dataset.x;savePrefs();render()}}
+function chartSVG(hist){
+  if(!hist||hist.length<2)return "";
+  var W=320,H=110,pl=8,pr=8,pt=14,pb=22,xs=W-pl-pr,ys=H-pt-pb,n=hist.length;
+  var vals=hist.map(function(p){return p.rate}),mn=Math.min.apply(null,vals),mx=Math.max.apply(null,vals),rng=(mx-mn)||1;
+  function X(i){return pl+(n==1?xs/2:i/(n-1)*xs)}
+  function Y(v){return pt+(1-(v-mn)/rng)*ys}
+  var pts=hist.map(function(p,i){return X(i).toFixed(1)+","+Y(p.rate).toFixed(1)}).join(" ");
+  var area="M"+X(0).toFixed(1)+" "+(pt+ys).toFixed(1)+" "+hist.map(function(p,i){return "L"+X(i).toFixed(1)+" "+Y(p.rate).toFixed(1)}).join(" ")+" L"+X(n-1).toFixed(1)+" "+(pt+ys).toFixed(1)+" Z";
+  var last=hist[n-1],d0=hist[0].date.slice(5).replace("-","."),d1=last.date.slice(5).replace("-",".");
+  return "<svg viewBox=\"0 0 "+W+" "+H+"\" style=\"width:100%;height:auto;display:block\">"+
+    "<defs><linearGradient id=\"gg\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#E0B44A\" stop-opacity=\"0.26\"/><stop offset=\"1\" stop-color=\"#E0B44A\" stop-opacity=\"0\"/></linearGradient></defs>"+
+    "<path d=\""+area+"\" fill=\"url(#gg)\"/>"+
+    "<polyline points=\""+pts+"\" fill=\"none\" stroke=\"#E0B44A\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>"+
+    "<circle cx=\""+X(n-1).toFixed(1)+"\" cy=\""+Y(last.rate).toFixed(1)+"\" r=\"3.5\" fill=\"#E0B44A\"/>"+
+    "<text x=\""+pl+"\" y=\""+(pt-3)+"\" fill=\"#5B6472\" font-size=\"10\" font-family=\"monospace\">max "+fmt(mx)+"</text>"+
+    "<text x=\""+(W-pr)+"\" y=\""+(pt-3)+"\" fill=\"#5B6472\" font-size=\"10\" font-family=\"monospace\" text-anchor=\"end\">min "+fmt(mn)+"</text>"+
+    "<text x=\""+pl+"\" y=\""+(H-6)+"\" fill=\"#5B6472\" font-size=\"10\" font-family=\"monospace\">"+d0+"</text>"+
+    "<text x=\""+(W-pr)+"\" y=\""+(H-6)+"\" fill=\"#5B6472\" font-size=\"10\" font-family=\"monospace\" text-anchor=\"end\">"+d1+"</text></svg>";
+}
 function render(){tabs();seg();var r=raw||{};document.getElementById("d").textContent=raw?dro(r.data):"Date indisponibile";
   var bnr=(r.bnr||{})[cur],banks=r.banks||{};
   var bnrc='<div class="card"><div style="display:flex;justify-content:space-between;align-items:baseline"><div class="bl">BNR · referință '+cur+'</div><div class="dim" style="font-size:11px">1 '+cur+' =</div></div><div class="bv">'+fmt(bnr)+' <small>RON</small></div></div>';
+  var chartc=(r.history&&r.history[cur]&&r.history[cur].length>=2)
+    ?'<div class="card"><div class="bl" style="color:var(--dim);margin-bottom:8px">BNR '+cur+' · ultimele 10 zile</div>'+chartSVG(r.history[cur])+'</div>'
+    :'<div class="card"><div class="empty">Graficul pe 10 zile apare după prima rulare a robotului (Actions → Run workflow).</div></div>';
+  var html=bnrc+(raw?chartc:"");
   var rows=[];for(var name in banks){var q=banks[name][cur];if(!q)continue;
     if(dir=="buy"&&q.vanzare==null)continue;if(dir=="sell"&&q.cumparare==null)continue;
     rows.push({name:name,cumparare:q.cumparare,vanzare:q.vanzare})}
   if(dir=="buy")rows.sort(function(a,b){return a.vanzare-b.vanzare});
   else rows.sort(function(a,b){return b.cumparare-a.cumparare});
-  var html=bnrc;
   if(!raw){html+='<div class="card"><div class="empty">Cursul nu s-a putut prelua. Apasă Reîncarcă.</div></div>';}
-  else if(!rows.length){html+='<div class="card"><div class="empty">Nu am date de bancă pentru '+cur+' încă. Rulează robotul (tab Actions → Run workflow) sau revino mai târziu.</div></div>';}
+  else if(!rows.length){html+='<div class="card"><div class="empty">Nu am date de bancă pentru '+cur+' încă. Rulează robotul (Actions → Run workflow) sau revino mai târziu.</div></div>';}
   else{
     var best=rows[0];
     var bv=dir=="buy"?best.vanzare:best.cumparare;
@@ -109,7 +131,7 @@ function render(){tabs();seg();var r=raw||{};document.getElementById("d").textCo
   }
   document.getElementById("c").innerHTML=html;
   var up=r.updated?new Date(r.updated):null;
-  document.getElementById("n").innerHTML='BNR e preluat automat din feedul oficial. Cursurile băncilor sunt informative, preluate din surse publice și modificate de mai multe ori pe zi; în weekend pot lipsi valori noi. „Cumpăr" compară vânzarea băncilor (plătești mai puțin = mai bine), „Vând" compară cumpărarea (primești mai mult = mai bine). Înainte de o tranzacție, verifică la ghișeu.'+(up?' · Date din '+up.toLocaleDateString("ro-RO")+' '+up.toLocaleTimeString("ro-RO",{hour:"2-digit",minute:"2-digit"}):'');
+  document.getElementById("n").innerHTML='BNR e preluat automat din feedul oficial (grafic pe cursul de referință). Cursurile băncilor sunt informative, din surse publice, modificate de mai multe ori pe zi; în weekend pot lipsi valori noi. „Cumpăr" compară vânzarea băncilor (plătești mai puțin = mai bine), „Vând" compară cumpărarea. Înainte de o tranzacție, verifică la ghișeu.'+(up?' · Date din '+up.toLocaleDateString("ro-RO")+' '+up.toLocaleTimeString("ro-RO",{hour:"2-digit",minute:"2-digit"}):'');
 }
 document.getElementById("r").onclick=load;load();
 </script>
