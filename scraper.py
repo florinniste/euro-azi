@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Preia cursul EUR/USD/GBP/CHF si scrie rates.json.
-- BNR: feedul oficial XML (sigur), pentru fiecare moneda.
+"""Preia cursul EUR/USD/GBP/CHF + istoric 10 zile si scrie rates.json.
+- BNR: feedul oficial XML (sigur), pentru fiecare moneda + istoric 10 zile.
 - Banci: paginile publice cursvalutarbanci.ro (cumparare+vanzare pe banca).
 Nu suprascrie o valoare buna anterioara cu una goala."""
 import json, re, sys, datetime, urllib.request, xml.etree.ElementTree as ET
@@ -38,6 +38,23 @@ def bnr_all():
             mult = float(rate.attrib.get("multiplier", "1"))
             out[c] = round(float(rate.text) / mult, 4)
     return date, out
+
+def bnr_10day():
+    """Istoric ultimele ~10 zile lucratoare din feedul oficial BNR."""
+    xml = get("https://www.bnr.ro/nbrfxrates10days.xml")
+    root = ET.fromstring(xml)
+    ns = {"n": "http://www.bnr.ro/xsd"}
+    hist = {c: [] for c in CURRENCIES}
+    for cube in root.findall(".//n:Cube", ns):
+        d = cube.attrib.get("date")
+        for rate in cube.findall("n:Rate", ns):
+            c = rate.attrib.get("currency")
+            if c in CURRENCIES:
+                mult = float(rate.attrib.get("multiplier", "1"))
+                hist[c].append({"date": d, "rate": round(float(rate.text) / mult, 4)})
+    for c in hist:
+        hist[c].sort(key=lambda x: x["date"])
+    return hist
 
 def banks_for(cur):
     lo, hi = PLAUS[cur]
@@ -94,6 +111,12 @@ def main():
         print(f"BNR esuat: {e}", file=sys.stderr)
         data["data"] = prev.get("data")
         data["bnr"] = prev.get("bnr", {})
+
+    try:
+        data["history"] = bnr_10day()
+    except Exception as e:
+        print(f"Istoric BNR esuat: {e}", file=sys.stderr)
+        data["history"] = prev.get("history", {})
 
     banks = {}
     for cur in CURRENCIES:
