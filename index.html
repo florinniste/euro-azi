@@ -159,9 +159,12 @@ function renderCross(r){
     '</div></div>';
   var he=(r.history||{}).EUR||[],hu=(r.history||{}).USD||[],mu={};
   for(var i=0;i<hu.length;i++)mu[hu[i].date]=hu[i].rate;
-  var cf=[];for(var j=0;j<he.length;j++){if(mu[he[j].date])cf.push({date:he[j].date,rate:+(he[j].rate/mu[he[j].date]).toFixed(4)});}
-  if(cf.length>=2)html+='<div class="card"><div class="bl" style="color:var(--dim);margin-bottom:10px">EUR/USD · '+rangeLabel()+'</div>'+rangeBar()+chartSVG(inRange(cf))+'</div>';
-  else html+='<div class="card"><div class="empty">Graficul EUR/USD apare după prima rulare a robotului.</div></div>';
+  var cf=[],cf2=[];for(var j=0;j<he.length;j++){var dd=he[j].date;if(mu[dd]){var q=he[j].rate/mu[dd];cf.push({date:dd,rate:+q.toFixed(4)});cf2.push({date:dd,rate:+(1/q).toFixed(4)});}}
+  if(cf.length>=2){
+    html+=rangeBar();
+    html+='<div class="card"><div class="bl" style="color:var(--dim);margin-bottom:10px">EUR/USD · '+rangeLabel()+' <span style="color:var(--faint);font-weight:600">(1 EUR în USD)</span></div>'+chartSVG(inRange(cf))+'</div>';
+    html+='<div class="card"><div class="bl" style="color:var(--dim);margin-bottom:10px">USD/EUR · '+rangeLabel()+' <span style="color:var(--faint);font-weight:600">(1 USD în EUR)</span></div>'+chartSVG(inRange(cf2))+'</div>';
+  } else html+='<div class="card"><div class="empty">Graficele apar după prima rulare a robotului.</div></div>';
   document.getElementById("c").innerHTML=html;wireRange();setNote(r,true);
 }
 document.getElementById("r").onclick=load;load();
