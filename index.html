@@ -4,19 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Curs azi</title>
-<meta name="theme-color" content="#0E1116">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F4F5F7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1116" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Curs azi">
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Crect width='180' height='180' rx='40' fill='%230E1116'/%3E%3Ctext x='90' y='120' font-size='96' font-family='Arial' font-weight='bold' fill='%23E0B44A' text-anchor='middle'%3E%E2%82%AC%3C/text%3E%3C/svg%3E">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect width='64' height='64' rx='14' fill='%230E1116'/%3E%3Ctext x='32' y='45' font-size='40' font-family='Arial' font-weight='bold' fill='%23E0B44A' text-anchor='middle'%3E%E2%82%AC%3C/text%3E%3C/svg%3E">
 <style>
-:root{--bg:#0E1116;--card:#171B22;--edge:#232A34;--line:#212734;--ink:#F2F4F7;--dim:#8A94A3;--faint:#5B6472;--gold:#E0B44A;--teal:#3FB6A8;--coral:#E0725C;--mono:ui-monospace,'SF Mono',Menlo,monospace;--sans:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+:root{--bg:#0E1116;--card:#171B22;--edge:#232A34;--line:#212734;--ink:#F2F4F7;--dim:#8A94A3;--faint:#5B6472;--gold:#E0B44A;--teal:#3FB6A8;--coral:#E0725C;--gold-ink:#E0B44A;--mono:ui-monospace,'SF Mono',Menlo,monospace;--sans:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+@media (prefers-color-scheme: light){:root{--bg:#F4F5F7;--card:#FFFFFF;--edge:#E4E7EC;--line:#EDEFF3;--ink:#141821;--dim:#5B6472;--faint:#98A2B3;--gold:#E0B44A;--gold-ink:#8A6410;--teal:#1F8E82;--coral:#C4553C}}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
 .wrap{max-width:480px;margin:0 auto;padding:22px 16px 40px}
 .top{display:flex;align-items:flex-end;justify-content:space-between}
-.eb{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);font-weight:700}
+.eb{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold-ink);font-weight:700}
 h1{font-size:26px;font-weight:800;letter-spacing:-.5px;margin:2px 0 0}
 .btn{background:transparent;border:1px solid var(--edge);color:var(--dim);border-radius:10px;padding:8px 12px;font-size:13px;font-weight:600;cursor:pointer}
 .date{font-size:13px;color:var(--faint);margin:4px 0 16px}
@@ -26,15 +29,19 @@ h1{font-size:26px;font-weight:800;letter-spacing:-.5px;margin:2px 0 0}
 .seg{display:flex;background:var(--card);border:1px solid var(--edge);border-radius:11px;padding:3px;margin-bottom:16px}
 .seg button{flex:1;padding:9px 0;border:none;background:transparent;color:var(--dim);font-weight:700;font-size:13px;border-radius:8px;cursor:pointer}
 .seg button.on{background:var(--bg);color:var(--ink)}
+.rng{display:flex;gap:6px;margin:0 0 12px}
+.rng button{flex:1;padding:6px 0;border:1px solid var(--edge);background:var(--card);color:var(--dim);border-radius:8px;font-size:11.5px;font-weight:700;cursor:pointer}
+.rng button.on{background:var(--gold);color:#241a05;border-color:var(--gold)}
 .card{background:var(--card);border:1px solid var(--edge);border-radius:16px;padding:16px 18px;margin-bottom:14px}
-.bl{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);font-weight:700}
-.bv{font-family:var(--mono);font-size:38px;font-weight:700;letter-spacing:-1px;color:var(--gold);line-height:1.05;margin-top:6px}
+.bl{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-ink);font-weight:700}
+.bv{font-family:var(--mono);font-size:38px;font-weight:700;letter-spacing:-1px;color:var(--gold-ink);line-height:1.05;margin-top:6px}
 .bv small{font-size:15px;color:var(--dim);font-weight:500}
 .best{background:linear-gradient(180deg,rgba(63,182,168,.10),var(--card));border-color:#2c5c56}
 .best .bl{color:var(--teal)}
 .brow{display:flex;align-items:center;gap:12px;padding:12px 16px;border:1px solid var(--edge);border-radius:14px;margin-bottom:8px;background:var(--card)}
 .brow.top{border-color:var(--teal)}
-.rank{width:22px;text-align:center;font-family:var(--mono);font-size:13px;color:var(--faint);font-weight:700}
+.rank{width:24px;height:24px;line-height:24px;text-align:center;font-family:var(--mono);font-size:13px;color:var(--faint);font-weight:700}
+.rank.r1{background:var(--teal);color:#04201d;border-radius:50%}
 .bkn{flex:1;min-width:0}
 .bkn .nm{font-size:14.5px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .bkn .sub{font-size:11px;color:var(--faint);font-family:var(--mono);margin-top:2px}
@@ -60,24 +67,26 @@ h1{font-size:26px;font-weight:800;letter-spacing:-.5px;margin:2px 0 0}
   <div class="note" id="n"></div>
 </div>
 <script>
-var CUR=["EUR","USD","GBP","CHF"],SYM={EUR:"€",USD:"$",GBP:"£",CHF:"CHF"};
+var CUR=["EUR","USD","GBP","CHF"],TABS=[["EUR","EUR"],["USD","USD"],["GBP","GBP"],["CHF","CHF"],["EURUSD","€/$"]],SYM={EUR:"€",USD:"$",GBP:"£",CHF:"CHF"};
 var NAME={EUR:"euro",USD:"dolar",GBP:"liră",CHF:"franc"};
-var raw=null,cur="EUR",dir="buy",PS="curs_prefs_v2";
+
+var raw=null,cur="EUR",dir="buy",rangeDays=30,PS="curs_prefs_v2";
 var Z=["duminică","luni","marți","miercuri","joi","vineri","sâmbătă"];
 var L=["ianuarie","februarie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"];
-try{var p=JSON.parse(localStorage.getItem(PS));if(p){cur=p.cur||cur;dir=p.dir||dir}}catch(e){}
-function savePrefs(){try{localStorage.setItem(PS,JSON.stringify({cur:cur,dir:dir}))}catch(e){}}
+try{var p=JSON.parse(localStorage.getItem(PS));if(p){cur=p.cur||cur;dir=p.dir||dir;rangeDays=p.rangeDays||rangeDays}}catch(e){}
+function savePrefs(){try{localStorage.setItem(PS,JSON.stringify({cur:cur,dir:dir,rangeDays:rangeDays}))}catch(e){}}
 function fmt(v,d){d=d||4;return(v==null||isNaN(v))?"—":Number(v).toFixed(d).replace(".",",")}
 function dro(iso){var x=iso?new Date(iso+"T12:00:00"):new Date();if(isNaN(x))return iso||"";return Z[x.getDay()]+", "+x.getDate()+" "+L[x.getMonth()]+" "+x.getFullYear()}
 function load(){document.getElementById("r").textContent="Se preia…";
   fetch("./rates.json?ts="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()})
   .then(function(j){raw=j}).catch(function(){}).then(function(){document.getElementById("r").textContent="Reîncarcă";render()})}
-function tabs(){var h="";for(var i=0;i<CUR.length;i++){var c=CUR[i];h+='<div class="tab'+(c==cur?' on':'')+'" data-c="'+c+'">'+c+'</div>'}document.getElementById("tabs").innerHTML=h;
+function tabs(){var h="";for(var i=0;i<TABS.length;i++){var c=TABS[i][0];h+='<div class="tab'+(c==cur?' on':'')+'" data-c="'+c+'">'+TABS[i][1]+'</div>'}document.getElementById("tabs").innerHTML=h;
   var t=document.querySelectorAll('.tab');for(var j=0;j<t.length;j++)t[j].onclick=function(){cur=this.dataset.c;savePrefs();render()}}
-function seg(){var h='<button data-x="buy" class="'+(dir=="buy"?"on":"")+'">Cumpăr '+cur+'</button><button data-x="sell" class="'+(dir=="sell"?"on":"")+'">Vând '+cur+'</button>';
+function seg(){var _sg=document.getElementById("seg");if(cur=="EURUSD"){_sg.innerHTML="";_sg.style.display="none";return;}_sg.style.display="flex";var h='<button data-x="buy" class="'+(dir=="buy"?"on":"")+'">Cumpăr '+cur+'</button><button data-x="sell" class="'+(dir=="sell"?"on":"")+'">Vând '+cur+'</button>';
   document.getElementById("seg").innerHTML=h;var b=document.querySelectorAll('.seg button');for(var i=0;i<b.length;i++)b[i].onclick=function(){dir=this.dataset.x;savePrefs();render()}}
 function chartSVG(hist){
   if(!hist||hist.length<2)return "";
+  var GD=(window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches)?"#8A6410":"#E0B44A";
   var W=320,H=110,pl=8,pr=8,pt=14,pb=22,xs=W-pl-pr,ys=H-pt-pb,n=hist.length;
   var vals=hist.map(function(p){return p.rate}),mn=Math.min.apply(null,vals),mx=Math.max.apply(null,vals),rng=(mx-mn)||1;
   function X(i){return pl+(n==1?xs/2:i/(n-1)*xs)}
@@ -85,53 +94,75 @@ function chartSVG(hist){
   var pts=hist.map(function(p,i){return X(i).toFixed(1)+","+Y(p.rate).toFixed(1)}).join(" ");
   var area="M"+X(0).toFixed(1)+" "+(pt+ys).toFixed(1)+" "+hist.map(function(p,i){return "L"+X(i).toFixed(1)+" "+Y(p.rate).toFixed(1)}).join(" ")+" L"+X(n-1).toFixed(1)+" "+(pt+ys).toFixed(1)+" Z";
   var last=hist[n-1],d0=hist[0].date.slice(5).replace("-","."),d1=last.date.slice(5).replace("-",".");
-  return "<svg viewBox=\"0 0 "+W+" "+H+"\" style=\"width:100%;height:auto;display:block\">"+
-    "<defs><linearGradient id=\"gg\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#E0B44A\" stop-opacity=\"0.26\"/><stop offset=\"1\" stop-color=\"#E0B44A\" stop-opacity=\"0\"/></linearGradient></defs>"+
-    "<path d=\""+area+"\" fill=\"url(#gg)\"/>"+
-    "<polyline points=\""+pts+"\" fill=\"none\" stroke=\"#E0B44A\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>"+
-    "<circle cx=\""+X(n-1).toFixed(1)+"\" cy=\""+Y(last.rate).toFixed(1)+"\" r=\"3.5\" fill=\"#E0B44A\"/>"+
-    "<text x=\""+pl+"\" y=\""+(pt-3)+"\" fill=\"#5B6472\" font-size=\"10\" font-family=\"monospace\">max "+fmt(mx)+"</text>"+
-    "<text x=\""+(W-pr)+"\" y=\""+(pt-3)+"\" fill=\"#5B6472\" font-size=\"10\" font-family=\"monospace\" text-anchor=\"end\">min "+fmt(mn)+"</text>"+
-    "<text x=\""+pl+"\" y=\""+(H-6)+"\" fill=\"#5B6472\" font-size=\"10\" font-family=\"monospace\">"+d0+"</text>"+
-    "<text x=\""+(W-pr)+"\" y=\""+(H-6)+"\" fill=\"#5B6472\" font-size=\"10\" font-family=\"monospace\" text-anchor=\"end\">"+d1+"</text></svg>";
+  var out="<svg viewBox='0 0 "+W+" "+H+"' style='width:100%;height:auto;display:block'>"+
+    "<defs><linearGradient id='gg' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#E0B44A' stop-opacity='0.26'/><stop offset='1' stop-color='#E0B44A' stop-opacity='0'/></linearGradient></defs>"+
+    "<path d='"+area+"' fill='url(#gg)'/>"+
+    "<polyline points='"+pts+"' fill='none' stroke='#E0B44A' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'/>"+
+    "<circle cx='"+X(n-1).toFixed(1)+"' cy='"+Y(last.rate).toFixed(1)+"' r='3.5' fill='#E0B44A'/>"+
+    "<text x='"+pl+"' y='"+(pt-3)+"' fill='#5B6472' font-size='10' font-family='monospace'>max "+fmt(mx)+"</text>"+
+    "<text x='"+(W-pr)+"' y='"+(pt-3)+"' fill='#5B6472' font-size='10' font-family='monospace' text-anchor='end'>min "+fmt(mn)+"</text>"+
+    "<text x='"+pl+"' y='"+(H-6)+"' fill='#5B6472' font-size='10' font-family='monospace'>"+d0+"</text>"+
+    "<text x='"+(W-pr)+"' y='"+(H-6)+"' fill='#5B6472' font-size='10' font-family='monospace' text-anchor='end'>"+d1+"</text></svg>";return out.replace(/#E0B44A/g,GD);
 }
+function rangeLabel(){return rangeDays==30?"ultimele 30 zile":rangeDays==90?"ultimele 3 luni":rangeDays==180?"ultimele 6 luni":"ultimele 12 luni";}
+function rangeBar(){var o=[[30,"30 zile"],[90,"3 luni"],[180,"6 luni"],[365,"12 luni"]],h='<div class="rng">';for(var i=0;i<o.length;i++)h+='<button data-days="'+o[i][0]+'" class="'+(rangeDays==o[i][0]?"on":"")+'">'+o[i][1]+'</button>';return h+'</div>';}
+function wireRange(){var b=document.querySelectorAll('.rng button');for(var i=0;i<b.length;i++)b[i].onclick=function(){rangeDays=+this.dataset.days;savePrefs();render()};}
+function inRange(hist){if(!hist||hist.length<2)return hist||[];var last=hist[hist.length-1].date,c=new Date(last+"T12:00:00");c.setDate(c.getDate()-rangeDays);var cs=c.toISOString().slice(0,10);var out=hist.filter(function(p){return p.date>=cs});return out.length>=2?out:hist.slice(-2);}
 function render(){tabs();seg();var r=raw||{};document.getElementById("d").textContent=raw?dro(r.data):"Date indisponibile";
+  if(cur=="EURUSD"){renderCross(r);return;}
   var bnr=(r.bnr||{})[cur],banks=r.banks||{};
   var bnrc='<div class="card"><div style="display:flex;justify-content:space-between;align-items:baseline"><div class="bl">BNR · referință '+cur+'</div><div class="dim" style="font-size:11px">1 '+cur+' =</div></div><div class="bv">'+fmt(bnr)+' <small>RON</small></div></div>';
-  var chartc=(r.history&&r.history[cur]&&r.history[cur].length>=2)
-    ?'<div class="card"><div class="bl" style="color:var(--dim);margin-bottom:8px">BNR '+cur+' · ultimele 10 zile</div>'+chartSVG(r.history[cur])+'</div>'
-    :'<div class="card"><div class="empty">Graficul pe 10 zile apare după prima rulare a robotului (Actions → Run workflow).</div></div>';
-  var html=bnrc+(raw?chartc:"");
   var rows=[];for(var name in banks){var q=banks[name][cur];if(!q)continue;
     if(dir=="buy"&&q.vanzare==null)continue;if(dir=="sell"&&q.cumparare==null)continue;
     rows.push({name:name,cumparare:q.cumparare,vanzare:q.vanzare})}
   if(dir=="buy")rows.sort(function(a,b){return a.vanzare-b.vanzare});
   else rows.sort(function(a,b){return b.cumparare-a.cumparare});
+  var fh=(r.history&&r.history[cur])?r.history[cur]:[];
+  var chartc=(fh.length>=2)
+    ?'<div class="card"><div class="bl" style="color:var(--dim);margin-bottom:10px">BNR '+cur+' · '+rangeLabel()+'</div>'+rangeBar()+chartSVG(inRange(fh))+'</div>'
+    :'<div class="card"><div class="empty">Graficul apare după prima rulare a robotului (Actions → Run workflow).</div></div>';
+  var html=bnrc+(raw?chartc:"");
   if(!raw){html+='<div class="card"><div class="empty">Cursul nu s-a putut prelua. Apasă Reîncarcă.</div></div>';}
-  else if(!rows.length){html+='<div class="card"><div class="empty">Nu am date de bancă pentru '+cur+' încă. Rulează robotul (Actions → Run workflow) sau revino mai târziu.</div></div>';}
+  else if(!rows.length){html+='<div class="card"><div class="empty">Nu am date de bancă pentru '+cur+' încă. Rulează robotul (tab Actions → Run workflow) sau revino mai târziu.</div></div>';}
   else{
-    var best=rows[0];
-    var bv=dir=="buy"?best.vanzare:best.cumparare;
-    html+='<div class="card best"><div class="bl">Cel mai bun curs · '+(dir=="buy"?"cumperi ":"vinzi ")+cur+'</div>'+
-      '<div style="display:flex;justify-content:space-between;align-items:flex-end;margin-top:6px">'+
-      '<div style="font-size:19px;font-weight:800">'+best.name+'</div>'+
-      '<div class="'+(dir=="buy"?"coral":"teal")+'" style="font-family:var(--mono);font-size:30px;font-weight:700;letter-spacing:-1px">'+fmt(bv)+'</div></div></div>';
     var lab=dir=="buy"?"Toate băncile — cel mai ieftin de cumpărat sus":"Toate băncile — cel mai bun de vândut sus";
     html+='<div class="dim" style="font-size:11px;text-transform:uppercase;letter-spacing:1.2px;font-weight:700;margin:14px 2px 10px">'+lab+'</div>';
     for(var i=0;i<rows.length;i++){var x=rows[i];
       var mainv=dir=="buy"?x.vanzare:x.cumparare,other=dir=="buy"?x.cumparare:x.vanzare;
       var mc=dir=="buy"?"coral":"teal";
-      var diff=(bnr!=null&&mainv!=null)?((mainv-bnr)>=0?"+":"")+fmt(mainv-bnr,3)+" vs BNR":"";
-      var sp=(x.cumparare!=null&&x.vanzare!=null)?"spread "+fmt(x.vanzare-x.cumparare,3):"";
+      var pct=(bnr!=null&&mainv!=null&&bnr!=0)?(mainv-bnr)/bnr*100:null;
+      var diff=(bnr!=null&&mainv!=null)?((mainv-bnr)>=0?"+":"")+fmt(mainv-bnr,3)+(pct!=null?" · "+(pct>=0?"+":"")+fmt(pct,2)+"%":"")+" vs BNR":"";
+      var spv=(x.cumparare!=null&&x.vanzare!=null)?x.vanzare-x.cumparare:null;
+      var spp=(spv!=null)?spv/((x.vanzare+x.cumparare)/2)*100:null;
+      var sp=(spv!=null)?"spread "+fmt(spv,3)+(spp!=null?" ("+fmt(spp,2)+"%)":""):"";
       html+='<div class="brow'+(i==0?' top':'')+'">'+
-        '<div class="rank">'+(i+1)+'</div>'+
+        '<div class="rank'+(i==0?' r1':'')+'">'+(i+1)+'</div>'+
         '<div class="bkn"><div class="nm">'+x.name+(i==0?'<span class="pill">'+(dir=="buy"?"cel mai ieftin":"cel mai mult")+'</span>':'')+'</div><div class="sub">'+(dir=="buy"?"cump. "+fmt(other):"vânz. "+fmt(other))+(sp?" · "+sp:"")+'</div></div>'+
         '<div class="main"><div class="v '+mc+'">'+fmt(mainv)+'</div><div class="d">'+diff+'</div></div></div>';
     }
   }
-  document.getElementById("c").innerHTML=html;
-  var up=r.updated?new Date(r.updated):null;
-  document.getElementById("n").innerHTML='BNR e preluat automat din feedul oficial (grafic pe cursul de referință). Cursurile băncilor sunt informative, din surse publice, modificate de mai multe ori pe zi; în weekend pot lipsi valori noi. „Cumpăr" compară vânzarea băncilor (plătești mai puțin = mai bine), „Vând" compară cumpărarea. Înainte de o tranzacție, verifică la ghișeu.'+(up?' · Date din '+up.toLocaleDateString("ro-RO")+' '+up.toLocaleTimeString("ro-RO",{hour:"2-digit",minute:"2-digit"}):'');
+  document.getElementById("c").innerHTML=html;wireRange();
+  setNote(r,false);
+}
+function setNote(r,cross){var up=r.updated?new Date(r.updated):null;
+  var base=cross?'Curs încrucișat derivat din referința oficială BNR (EUR/RON ÷ USD/RON). Orientativ; la schimbul direct banca aplică propriul curs și comision.':'BNR e preluat automat din feedul oficial (grafic pe cursul de referință). Cursurile băncilor sunt informative, din surse publice; în weekend pot lipsi valori noi. „Cumpăr" compară vânzarea băncilor, „Vând" compară cumpărarea. Înainte de o tranzacție, verifică la ghișeu.';
+  document.getElementById("n").innerHTML=base+(up?' · Date din '+up.toLocaleDateString("ro-RO")+' '+up.toLocaleTimeString("ro-RO",{hour:"2-digit",minute:"2-digit"}):'');
+}
+function renderCross(r){
+  var e=(r.bnr||{}).EUR,u=(r.bnr||{}).USD,eu=(e&&u)?e/u:null,ue=(e&&u)?u/e:null,html="";
+  if(!raw){document.getElementById("c").innerHTML='<div class="card"><div class="empty">Cursul nu s-a putut prelua. Apasă Reîncarcă.</div></div>';setNote(r,true);return;}
+  html+='<div class="card"><div class="bl">Curs încrucișat · BNR</div>'+
+    '<div style="display:flex;gap:14px;margin-top:10px">'+
+      '<div style="flex:1"><div class="dim" style="font-size:11px">1 EUR</div><div class="bv" style="font-size:29px;margin-top:2px">'+fmt(eu,4)+' <small>USD</small></div></div>'+
+      '<div class="vd" style="align-self:stretch"></div>'+
+      '<div style="flex:1"><div class="dim" style="font-size:11px">1 USD</div><div class="bv" style="font-size:29px;margin-top:2px">'+fmt(ue,4)+' <small>EUR</small></div></div>'+
+    '</div></div>';
+  var he=(r.history||{}).EUR||[],hu=(r.history||{}).USD||[],mu={};
+  for(var i=0;i<hu.length;i++)mu[hu[i].date]=hu[i].rate;
+  var cf=[];for(var j=0;j<he.length;j++){if(mu[he[j].date])cf.push({date:he[j].date,rate:+(he[j].rate/mu[he[j].date]).toFixed(4)});}
+  if(cf.length>=2)html+='<div class="card"><div class="bl" style="color:var(--dim);margin-bottom:10px">EUR/USD · '+rangeLabel()+'</div>'+rangeBar()+chartSVG(inRange(cf))+'</div>';
+  else html+='<div class="card"><div class="empty">Graficul EUR/USD apare după prima rulare a robotului.</div></div>';
+  document.getElementById("c").innerHTML=html;wireRange();setNote(r,true);
 }
 document.getElementById("r").onclick=load;load();
 </script>
