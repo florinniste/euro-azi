@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-27T15:51:41+00:00",
+  "updated": "2026-07-27T20:51:21+00:00",
   "currencies": [
     "EUR",
     "USD",
@@ -4250,20 +4250,20 @@
     },
     "Patria Bank": {
       "EUR": {
-        "cumparare": 5.158,
-        "vanzare": 5.312
+        "cumparare": 5.1342,
+        "vanzare": 5.3406
       },
       "USD": {
-        "cumparare": 4.4955,
-        "vanzare": 4.6755
+        "cumparare": 4.4634,
+        "vanzare": 4.7354
       },
       "GBP": {
-        "cumparare": 6.0205,
-        "vanzare": 6.2105
+        "cumparare": 5.9568,
+        "vanzare": 6.2691
       },
       "CHF": {
-        "cumparare": 5.5465,
-        "vanzare": 5.7065
+        "cumparare": 5.4866,
+        "vanzare": 5.759
       }
     }
   }
