@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07T15:39:51+00:00",
+  "updated": "2026-08-07T18:32:13+00:00",
   "currencies": [
     "EUR",
     "USD",
@@ -1722,7 +1722,7 @@
   "banks": {
     "Banca Transilvania": {
       "EUR": {
-        "cumparare": 5.17,
+        "cumparare": 5.165,
         "vanzare": 5.335
       },
       "USD": {
@@ -1730,12 +1730,12 @@
         "vanzare": 4.655
       },
       "GBP": {
-        "cumparare": 5.945,
-        "vanzare": 6.275
+        "cumparare": 5.95,
+        "vanzare": 6.28
       },
       "CHF": {
-        "cumparare": 5.505,
-        "vanzare": 5.705
+        "cumparare": 5.51,
+        "vanzare": 5.71
       }
     },
     "CEC Bank": {
@@ -1898,20 +1898,20 @@
     },
     "Patria Bank": {
       "EUR": {
-        "cumparare": 5.1835,
-        "vanzare": 5.3375
+        "cumparare": 5.1531,
+        "vanzare": 5.3597
       },
       "USD": {
-        "cumparare": 4.4695,
-        "vanzare": 4.6495
+        "cumparare": 4.409,
+        "vanzare": 4.6798
       },
       "GBP": {
-        "cumparare": 6.029,
-        "vanzare": 6.219
+        "cumparare": 5.9638,
+        "vanzare": 6.2761
       },
       "CHF": {
-        "cumparare": 5.533,
-        "vanzare": 5.693
+        "cumparare": 5.4866,
+        "vanzare": 5.759
       }
     }
   }
