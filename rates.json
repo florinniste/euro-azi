@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-12T16:10:51+00:00",
+  "updated": "2026-08-13T09:46:08+00:00",
   "currencies": [
     "EUR",
     "USD",
@@ -1726,12 +1726,12 @@
         "vanzare": 5.325
       },
       "USD": {
-        "cumparare": 4.43,
-        "vanzare": 4.65
+        "cumparare": 4.435,
+        "vanzare": 4.66
       },
       "GBP": {
-        "cumparare": 5.96,
-        "vanzare": 6.29
+        "cumparare": 5.95,
+        "vanzare": 6.28
       },
       "CHF": {
         "cumparare": 5.48,
@@ -1744,8 +1744,8 @@
         "vanzare": 5.3
       },
       "USD": {
-        "cumparare": 4.46,
-        "vanzare": 4.6
+        "cumparare": 4.48,
+        "vanzare": 4.62
       },
       "GBP": {
         "cumparare": 6.04,
@@ -1762,8 +1762,8 @@
         "vanzare": 5.35
       },
       "USD": {
-        "cumparare": 4.44,
-        "vanzare": 4.64
+        "cumparare": 4.45,
+        "vanzare": 4.65
       },
       "GBP": {
         "cumparare": 6.0,
@@ -1771,39 +1771,39 @@
       },
       "CHF": {
         "cumparare": 5.47,
-        "vanzare": 5.72
+        "vanzare": 5.71
       }
     },
     "BRD": {
       "EUR": {
-        "cumparare": 5.157,
-        "vanzare": 5.319
+        "cumparare": 5.155,
+        "vanzare": 5.317
       },
       "USD": {
-        "cumparare": 4.448,
-        "vanzare": 4.635
+        "cumparare": 4.449,
+        "vanzare": 4.636
       },
       "GBP": {
-        "cumparare": 6.006,
-        "vanzare": 6.259
+        "cumparare": 6.005,
+        "vanzare": 6.257
       }
     },
     "BCR": {
       "EUR": {
-        "cumparare": 5.154,
-        "vanzare": 5.325
+        "cumparare": 5.166,
+        "vanzare": 5.317
       },
       "USD": {
-        "cumparare": 4.433,
-        "vanzare": 4.638
+        "cumparare": 4.457,
+        "vanzare": 4.642
       },
       "GBP": {
         "cumparare": 5.99,
         "vanzare": 6.275
       },
       "CHF": {
-        "cumparare": 5.493,
-        "vanzare": 5.693
+        "cumparare": 5.492,
+        "vanzare": 5.692
       }
     },
     "ING Bank": {
@@ -1826,20 +1826,20 @@
     },
     "Raiffeisen Bank": {
       "EUR": {
-        "cumparare": 5.1653,
-        "vanzare": 5.3175
+        "cumparare": 5.1673,
+        "vanzare": 5.3183
       },
       "USD": {
-        "cumparare": 4.4455,
-        "vanzare": 4.6269
+        "cumparare": 4.4564,
+        "vanzare": 4.6368
       },
       "GBP": {
-        "cumparare": 6.0568,
-        "vanzare": 6.2189
+        "cumparare": 6.0519,
+        "vanzare": 6.2125
       },
       "CHF": {
-        "cumparare": 5.5264,
-        "vanzare": 5.669
+        "cumparare": 5.5277,
+        "vanzare": 5.6688
       }
     },
     "EximBank": {
@@ -1874,44 +1874,44 @@
         "vanzare": 6.23
       },
       "CHF": {
-        "cumparare": 5.485,
-        "vanzare": 5.7
+        "cumparare": 5.475,
+        "vanzare": 5.695
       }
     },
     "Intesa Sanpaolo Bank": {
       "EUR": {
-        "cumparare": 5.163,
-        "vanzare": 5.313
+        "cumparare": 5.1746,
+        "vanzare": 5.2945
       },
       "USD": {
-        "cumparare": 4.4637,
-        "vanzare": 4.6137
+        "cumparare": 4.4825,
+        "vanzare": 4.6024
       },
       "GBP": {
-        "cumparare": 6.0478,
-        "vanzare": 6.1978
+        "cumparare": 6.0599,
+        "vanzare": 6.1799
       },
       "CHF": {
-        "cumparare": 5.5143,
-        "vanzare": 5.6642
+        "cumparare": 5.5196,
+        "vanzare": 5.6395
       }
     },
     "Patria Bank": {
       "EUR": {
-        "cumparare": 5.168,
-        "vanzare": 5.322
+        "cumparare": 5.1665,
+        "vanzare": 5.3205
       },
       "USD": {
-        "cumparare": 4.453,
-        "vanzare": 4.633
+        "cumparare": 4.4555,
+        "vanzare": 4.6355
       },
       "GBP": {
-        "cumparare": 6.031,
-        "vanzare": 6.221
+        "cumparare": 6.0285,
+        "vanzare": 6.2185
       },
       "CHF": {
-        "cumparare": 5.5145,
-        "vanzare": 5.6745
+        "cumparare": 5.506,
+        "vanzare": 5.666
       }
     }
   }
