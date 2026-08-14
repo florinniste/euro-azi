@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-14T09:39:09+00:00",
+  "updated": "2026-08-14T12:11:33+00:00",
   "currencies": [
     "EUR",
     "USD",
@@ -1726,8 +1726,8 @@
         "vanzare": 5.325
       },
       "USD": {
-        "cumparare": 4.425,
-        "vanzare": 4.65
+        "cumparare": 4.42,
+        "vanzare": 4.64
       },
       "GBP": {
         "cumparare": 5.955,
@@ -1790,20 +1790,20 @@
     },
     "BCR": {
       "EUR": {
-        "cumparare": 5.168,
-        "vanzare": 5.319
+        "cumparare": 5.167,
+        "vanzare": 5.318
       },
       "USD": {
-        "cumparare": 4.445,
-        "vanzare": 4.63
+        "cumparare": 4.44,
+        "vanzare": 4.625
       },
       "GBP": {
-        "cumparare": 5.99,
-        "vanzare": 6.275
+        "cumparare": 5.991,
+        "vanzare": 6.276
       },
       "CHF": {
-        "cumparare": 5.48,
-        "vanzare": 5.68
+        "cumparare": 5.483,
+        "vanzare": 5.683
       }
     },
     "ING Bank": {
@@ -1826,20 +1826,20 @@
     },
     "Raiffeisen Bank": {
       "EUR": {
-        "cumparare": 5.1674,
-        "vanzare": 5.3181
+        "cumparare": 5.1665,
+        "vanzare": 5.3182
       },
       "USD": {
-        "cumparare": 4.4507,
-        "vanzare": 4.6308
+        "cumparare": 4.4433,
+        "vanzare": 4.6242
       },
       "GBP": {
-        "cumparare": 6.0517,
-        "vanzare": 6.212
+        "cumparare": 6.0553,
+        "vanzare": 6.2174
       },
       "CHF": {
-        "cumparare": 5.5088,
-        "vanzare": 5.65
+        "cumparare": 5.5093,
+        "vanzare": 5.6521
       }
     },
     "EximBank": {
