@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-21T14:57:24+00:00",
+  "updated": "2026-08-21T17:05:28+00:00",
   "currencies": [
     "EUR",
     "USD",
@@ -1722,12 +1722,12 @@
   "banks": {
     "Banca Transilvania": {
       "EUR": {
-        "cumparare": 5.175,
-        "vanzare": 5.34
+        "cumparare": 5.17,
+        "vanzare": 5.335
       },
       "USD": {
-        "cumparare": 4.38,
-        "vanzare": 4.6
+        "cumparare": 4.39,
+        "vanzare": 4.61
       },
       "GBP": {
         "cumparare": 5.955,
@@ -1844,20 +1844,20 @@
     },
     "EximBank": {
       "EUR": {
-        "cumparare": 5.2075,
-        "vanzare": 5.3075
+        "cumparare": 5.204,
+        "vanzare": 5.304
       },
       "USD": {
-        "cumparare": 4.424,
-        "vanzare": 4.559
+        "cumparare": 4.438,
+        "vanzare": 4.5595
       },
       "GBP": {
-        "cumparare": 6.056,
-        "vanzare": 6.216
+        "cumparare": 6.0535,
+        "vanzare": 6.2195
       },
       "CHF": {
-        "cumparare": 5.5625,
-        "vanzare": 5.6825
+        "cumparare": 5.545,
+        "vanzare": 5.6965
       }
     },
     "Libra Bank": {
