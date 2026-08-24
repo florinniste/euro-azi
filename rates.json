@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-24T08:24:58+00:00",
+  "updated": "2026-08-24T11:06:35+00:00",
   "currencies": [
     "EUR",
     "USD",
@@ -1726,16 +1726,16 @@
         "vanzare": 5.335
       },
       "USD": {
-        "cumparare": 4.39,
-        "vanzare": 4.61
+        "cumparare": 4.395,
+        "vanzare": 4.615
       },
       "GBP": {
-        "cumparare": 5.955,
+        "cumparare": 5.96,
         "vanzare": 6.29
       },
       "CHF": {
         "cumparare": 5.5,
-        "vanzare": 5.695
+        "vanzare": 5.7
       }
     },
     "CEC Bank": {
@@ -1748,8 +1748,8 @@
         "vanzare": 4.57
       },
       "GBP": {
-        "cumparare": 6.05,
-        "vanzare": 6.23
+        "cumparare": 6.04,
+        "vanzare": 6.22
       },
       "CHF": {
         "cumparare": 5.54,
@@ -1786,20 +1786,24 @@
       "GBP": {
         "cumparare": 6.011,
         "vanzare": 6.263
+      },
+      "CHF": {
+        "cumparare": 5.4779,
+        "vanzare": 5.7588
       }
     },
     "BCR": {
       "EUR": {
-        "cumparare": 5.175,
-        "vanzare": 5.326
+        "cumparare": 5.177,
+        "vanzare": 5.328
       },
       "USD": {
-        "cumparare": 4.408,
-        "vanzare": 4.593
+        "cumparare": 4.41,
+        "vanzare": 4.595
       },
       "GBP": {
-        "cumparare": 5.991,
-        "vanzare": 6.276
+        "cumparare": 5.992,
+        "vanzare": 6.277
       },
       "CHF": {
         "cumparare": 5.514,
@@ -1826,20 +1830,20 @@
     },
     "Raiffeisen Bank": {
       "EUR": {
-        "cumparare": 5.176,
-        "vanzare": 5.327
+        "cumparare": 5.1784,
+        "vanzare": 5.3286
       },
       "USD": {
-        "cumparare": 4.4076,
-        "vanzare": 4.5879
+        "cumparare": 4.4146,
+        "vanzare": 4.5941
       },
       "GBP": {
-        "cumparare": 6.056,
-        "vanzare": 6.2194
+        "cumparare": 6.0594,
+        "vanzare": 6.219
       },
       "CHF": {
-        "cumparare": 5.5421,
-        "vanzare": 5.6856
+        "cumparare": 5.5428,
+        "vanzare": 5.6831
       }
     },
     "EximBank": {
