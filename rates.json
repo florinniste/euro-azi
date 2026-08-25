@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-24T16:19:41+00:00",
+  "updated": "2026-08-25T06:20:57+00:00",
   "currencies": [
     "EUR",
     "USD",
@@ -1722,20 +1722,20 @@
   "banks": {
     "Banca Transilvania": {
       "EUR": {
-        "cumparare": 5.165,
-        "vanzare": 5.335
+        "cumparare": 5.18,
+        "vanzare": 5.325
       },
       "USD": {
-        "cumparare": 4.39,
-        "vanzare": 4.61
+        "cumparare": 4.395,
+        "vanzare": 4.615
       },
       "GBP": {
-        "cumparare": 5.955,
+        "cumparare": 5.96,
         "vanzare": 6.29
       },
       "CHF": {
-        "cumparare": 5.495,
-        "vanzare": 5.695
+        "cumparare": 5.505,
+        "vanzare": 5.68
       }
     },
     "CEC Bank": {
@@ -1762,16 +1762,16 @@
         "vanzare": 5.36
       },
       "USD": {
-        "cumparare": 4.4,
-        "vanzare": 4.59
+        "cumparare": 4.41,
+        "vanzare": 4.6
       },
       "GBP": {
         "cumparare": 6.0,
         "vanzare": 6.27
       },
       "CHF": {
-        "cumparare": 5.49,
-        "vanzare": 5.74
+        "cumparare": 5.48,
+        "vanzare": 5.73
       }
     },
     "BRD": {
@@ -1784,8 +1784,8 @@
         "vanzare": 4.592
       },
       "GBP": {
-        "cumparare": 6.011,
-        "vanzare": 6.263
+        "cumparare": 6.014,
+        "vanzare": 6.267
       },
       "CHF": {
         "cumparare": 5.4779,
@@ -1830,38 +1830,38 @@
     },
     "Raiffeisen Bank": {
       "EUR": {
-        "cumparare": 5.1762,
-        "vanzare": 5.3264
+        "cumparare": 5.1768,
+        "vanzare": 5.3292
       },
       "USD": {
-        "cumparare": 4.4099,
-        "vanzare": 4.5895
+        "cumparare": 4.4157,
+        "vanzare": 4.5972
       },
       "GBP": {
-        "cumparare": 6.0591,
-        "vanzare": 6.2188
+        "cumparare": 6.059,
+        "vanzare": 6.2233
       },
       "CHF": {
-        "cumparare": 5.5387,
-        "vanzare": 5.679
+        "cumparare": 5.5346,
+        "vanzare": 5.678
       }
     },
     "EximBank": {
       "EUR": {
-        "cumparare": 5.203,
-        "vanzare": 5.303
+        "cumparare": 5.201,
+        "vanzare": 5.301
       },
       "USD": {
-        "cumparare": 4.431,
-        "vanzare": 4.566
+        "cumparare": 4.441,
+        "vanzare": 4.5625
       },
       "GBP": {
-        "cumparare": 6.0565,
-        "vanzare": 6.2165
+        "cumparare": 6.057,
+        "vanzare": 6.223
       },
       "CHF": {
-        "cumparare": 5.558,
-        "vanzare": 5.678
+        "cumparare": 5.535,
+        "vanzare": 5.687
       }
     },
     "Libra Bank": {
@@ -1870,16 +1870,16 @@
         "vanzare": 5.315
       },
       "USD": {
-        "cumparare": 4.415,
-        "vanzare": 4.585
+        "cumparare": 4.425,
+        "vanzare": 4.595
       },
       "GBP": {
         "cumparare": 6.035,
-        "vanzare": 6.235
+        "vanzare": 6.24
       },
       "CHF": {
-        "cumparare": 5.51,
-        "vanzare": 5.725
+        "cumparare": 5.5,
+        "vanzare": 5.715
       }
     },
     "Intesa Sanpaolo Bank": {
