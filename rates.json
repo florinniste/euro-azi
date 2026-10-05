@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05T12:44:13+00:00",
+  "updated": "2026-10-05T20:50:26+00:00",
   "currencies": [
     "EUR",
     "USD",
@@ -1722,38 +1722,38 @@
   "banks": {
     "Banca Transilvania": {
       "EUR": {
-        "cumparare": 5.24,
-        "vanzare": 5.43
+        "cumparare": 5.245,
+        "vanzare": 5.435
       },
       "USD": {
-        "cumparare": 4.64,
-        "vanzare": 4.875
+        "cumparare": 4.65,
+        "vanzare": 4.885
       },
       "GBP": {
-        "cumparare": 6.105,
-        "vanzare": 6.445
+        "cumparare": 6.115,
+        "vanzare": 6.455
       },
       "CHF": {
-        "cumparare": 5.6,
-        "vanzare": 5.825
+        "cumparare": 5.61,
+        "vanzare": 5.83
       }
     },
     "CEC Bank": {
       "EUR": {
-        "cumparare": 5.27,
-        "vanzare": 5.39
+        "cumparare": 5.28,
+        "vanzare": 5.4
       },
       "USD": {
-        "cumparare": 4.69,
-        "vanzare": 4.83
+        "cumparare": 4.7,
+        "vanzare": 4.84
       },
       "GBP": {
         "cumparare": 6.21,
         "vanzare": 6.39
       },
       "CHF": {
-        "cumparare": 5.66,
-        "vanzare": 5.8
+        "cumparare": 5.67,
+        "vanzare": 5.81
       }
     },
     "UniCredit Bank": {
@@ -1794,20 +1794,20 @@
     },
     "BCR": {
       "EUR": {
-        "cumparare": 5.26,
-        "vanzare": 5.411
+        "cumparare": 5.257,
+        "vanzare": 5.428
       },
       "USD": {
-        "cumparare": 4.669,
-        "vanzare": 4.854
+        "cumparare": 4.662,
+        "vanzare": 4.867
       },
       "GBP": {
-        "cumparare": 6.149,
-        "vanzare": 6.434
+        "cumparare": 6.155,
+        "vanzare": 6.44
       },
       "CHF": {
-        "cumparare": 5.629,
-        "vanzare": 5.829
+        "cumparare": 5.634,
+        "vanzare": 5.834
       }
     },
     "ING Bank": {
@@ -1830,38 +1830,38 @@
     },
     "Raiffeisen Bank": {
       "EUR": {
-        "cumparare": 5.2583,
-        "vanzare": 5.4117
+        "cumparare": 5.2656,
+        "vanzare": 5.4164
       },
       "USD": {
-        "cumparare": 4.6662,
-        "vanzare": 4.8491
+        "cumparare": 4.6778,
+        "vanzare": 4.8582
       },
       "GBP": {
-        "cumparare": 6.2115,
-        "vanzare": 6.3763
+        "cumparare": 6.2142,
+        "vanzare": 6.3752
       },
       "CHF": {
-        "cumparare": 5.6561,
-        "vanzare": 5.8011
+        "cumparare": 5.6643,
+        "vanzare": 5.8059
       }
     },
     "EximBank": {
       "EUR": {
-        "cumparare": 5.284,
-        "vanzare": 5.384
+        "cumparare": 5.291,
+        "vanzare": 5.391
       },
       "USD": {
-        "cumparare": 4.693,
-        "vanzare": 4.828
+        "cumparare": 4.708,
+        "vanzare": 4.8355
       },
       "GBP": {
-        "cumparare": 6.216,
-        "vanzare": 6.376
+        "cumparare": 6.2155,
+        "vanzare": 6.384
       },
       "CHF": {
-        "cumparare": 5.677,
-        "vanzare": 5.797
+        "cumparare": 5.6595,
+        "vanzare": 5.813
       }
     },
     "Libra Bank": {
@@ -1884,38 +1884,38 @@
     },
     "Intesa Sanpaolo Bank": {
       "EUR": {
-        "cumparare": 5.2585,
-        "vanzare": 5.4084
+        "cumparare": 5.2385,
+        "vanzare": 5.4384
       },
       "USD": {
-        "cumparare": 4.6936,
-        "vanzare": 4.8436
+        "cumparare": 4.6662,
+        "vanzare": 4.8661
       },
       "GBP": {
-        "cumparare": 6.2098,
-        "vanzare": 6.3598
+        "cumparare": 6.1797,
+        "vanzare": 6.3796
       },
       "CHF": {
-        "cumparare": 5.6616,
-        "vanzare": 5.8116
+        "cumparare": 5.628,
+        "vanzare": 5.8279
       }
     },
     "Patria Bank": {
       "EUR": {
-        "cumparare": 5.267,
-        "vanzare": 5.421
+        "cumparare": 5.2437,
+        "vanzare": 5.4511
       },
       "USD": {
-        "cumparare": 4.682,
-        "vanzare": 4.862
+        "cumparare": 4.6352,
+        "vanzare": 4.9106
       },
       "GBP": {
-        "cumparare": 6.1965,
-        "vanzare": 6.3865
+        "cumparare": 6.1331,
+        "vanzare": 6.4489
       },
       "CHF": {
-        "cumparare": 5.6675,
-        "vanzare": 5.8275
+        "cumparare": 5.5999,
+        "vanzare": 5.8747
       }
     }
   }
