@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T14:25:11+00:00",
+  "updated": "2026-11-20T22:23:23+00:00",
   "currencies": [
     "EUR",
     "USD",
@@ -1744,12 +1744,12 @@
         "vanzare": 5.41
       },
       "USD": {
-        "cumparare": 4.81,
-        "vanzare": 4.95
+        "cumparare": 4.8,
+        "vanzare": 4.94
       },
       "GBP": {
-        "cumparare": 6.3,
-        "vanzare": 6.48
+        "cumparare": 6.29,
+        "vanzare": 6.47
       },
       "CHF": {
         "cumparare": 5.72,
