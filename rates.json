@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T22:47:01+00:00",
+  "updated": "2026-11-20T14:25:11+00:00",
   "currencies": [
     "EUR",
     "USD",
@@ -1744,16 +1744,16 @@
         "vanzare": 5.41
       },
       "USD": {
-        "cumparare": 4.79,
-        "vanzare": 4.93
+        "cumparare": 4.81,
+        "vanzare": 4.95
       },
       "GBP": {
         "cumparare": 6.3,
         "vanzare": 6.48
       },
       "CHF": {
-        "cumparare": 5.69,
-        "vanzare": 5.83
+        "cumparare": 5.72,
+        "vanzare": 5.86
       }
     },
     "UniCredit Bank": {
@@ -1762,12 +1762,12 @@
         "vanzare": 5.46
       },
       "USD": {
-        "cumparare": 4.77,
-        "vanzare": 4.99
+        "cumparare": 4.76,
+        "vanzare": 4.98
       },
       "GBP": {
-        "cumparare": 6.27,
-        "vanzare": 6.55
+        "cumparare": 6.25,
+        "vanzare": 6.53
       },
       "CHF": {
         "cumparare": 5.66,
@@ -1780,12 +1780,12 @@
         "vanzare": 5.431
       },
       "USD": {
-        "cumparare": 4.774,
-        "vanzare": 4.975
+        "cumparare": 4.768,
+        "vanzare": 4.968
       },
       "GBP": {
-        "cumparare": 6.275,
-        "vanzare": 6.538
+        "cumparare": 6.255,
+        "vanzare": 6.518
       },
       "CHF": {
         "cumparare": 5.6675,
@@ -1848,20 +1848,20 @@
     },
     "EximBank": {
       "EUR": {
-        "cumparare": 5.298,
-        "vanzare": 5.398
+        "cumparare": 5.3015,
+        "vanzare": 5.4015
       },
       "USD": {
-        "cumparare": 4.8005,
-        "vanzare": 4.9305
+        "cumparare": 4.8135,
+        "vanzare": 4.9485
       },
       "GBP": {
-        "cumparare": 6.3075,
-        "vanzare": 6.478
+        "cumparare": 6.3145,
+        "vanzare": 6.4745
       },
       "CHF": {
-        "cumparare": 5.691,
-        "vanzare": 5.845
+        "cumparare": 5.7315,
+        "vanzare": 5.8515
       }
     },
     "Libra Bank": {
@@ -1884,38 +1884,38 @@
     },
     "Intesa Sanpaolo Bank": {
       "EUR": {
-        "cumparare": 5.2445,
-        "vanzare": 5.4444
+        "cumparare": 5.246,
+        "vanzare": 5.4459
       },
       "USD": {
-        "cumparare": 4.7598,
-        "vanzare": 4.9597
+        "cumparare": 4.7593,
+        "vanzare": 4.9592
       },
       "GBP": {
-        "cumparare": 6.2726,
-        "vanzare": 6.4725
+        "cumparare": 6.2609,
+        "vanzare": 6.4608
       },
       "CHF": {
-        "cumparare": 5.6637,
-        "vanzare": 5.8635
+        "cumparare": 5.6923,
+        "vanzare": 5.8922
       }
     },
     "Patria Bank": {
       "EUR": {
-        "cumparare": 5.2501,
-        "vanzare": 5.4577
+        "cumparare": 5.2765,
+        "vanzare": 5.4305
       },
       "USD": {
-        "cumparare": 4.7342,
-        "vanzare": 5.0116
+        "cumparare": 4.7785,
+        "vanzare": 4.9585
       },
       "GBP": {
-        "cumparare": 6.2217,
-        "vanzare": 6.5392
+        "cumparare": 6.28,
+        "vanzare": 6.47
       },
       "CHF": {
-        "cumparare": 5.6356,
-        "vanzare": 5.911
+        "cumparare": 5.703,
+        "vanzare": 5.863
       }
     }
   }
